@@ -1,0 +1,12 @@
+@import "/stylesheets/MainStylesheet.css";
+
+.table-view {
+    -fx-font-family: Arial, cursive;
+    -fx-background-color: #c7e7f1;
+    -fx-border-color: #08155BFF;
+    -fx-border-width: 2;
+}
+
+.table-view .column-header {
+    -fx-background-color: #8dc4ce;
+}

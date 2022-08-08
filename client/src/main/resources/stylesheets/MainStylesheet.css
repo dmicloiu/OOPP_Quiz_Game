@@ -1,0 +1,27 @@
+
+.root {
+    -fx-font-family: Arial, consistent;
+    -fx-background-color: #dff4ff;
+}
+
+.standardButton {
+    -fx-background-color: #b8daf5;
+    -fx-text-fill: #08155b;
+    -fx-border-color: #2fadd7;
+    -fx-border-width: 3;
+    -fx-padding: 0;
+    -fx-indent: 0;
+    -fx-end-margin: 0;
+    -fx-start-margin: 0;
+    -fx-alignment: center;
+}
+
+.standardButton:hover {
+    -fx-background-color: #6ecdd3;
+}
+
+
+.title {
+    -fx-alignment: center;
+}
+

@@ -1,0 +1,44 @@
+@import "/stylesheets/MainStylesheet.css";
+
+.timeBar {
+    -fx-background-color: #d67913;
+    -fx-border-color: #ab600f;
+    -fx-border-width: 3;
+    -fx-padding: 0;
+    -fx-end-margin: 0;
+    -fx-start-margin: 0;
+    -fx-alignment: center;
+}
+
+.answer {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 3;
+    -fx-border-color: #D67913FF;
+    -fx-text-fill: #08155b;
+    -fx-padding: 0;
+    -fx-indent: 0;
+    -fx-end-margin: 0;
+    -fx-start-margin: 0;
+}
+.answer:hover {
+    -fx-background-color: #ffbf7f;
+}
+
+.feature {
+    -fx-background-color: #9ad7dc;
+    -fx-border-width: 1;
+    -fx-border-color: #086af8;
+}
+
+.feature:hover {
+    -fx-background-color: #d67913;
+}
+
+.submit {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1;
+    -fx-border-color: #086af8;
+}
+.submit:hover {
+    -fx-background-color: #d67913;
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="712.0" stylesheets="/stylesheets/Tables.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.SingleLeaderboardCtrl">
+   <children>
+      <Text fill="#d67913" layoutX="156.0" layoutY="78.0" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="3.0" styleClass="title" text="-Single player leaderboard-" textAlignment="CENTER" wrappingWidth="382.41632080078125">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8117647171020508" green="0.5843137502670288" blue="0.14509804546833038" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18431372940540314" green="0.6784313917160034" blue="0.843137264251709" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Text>
+
+      <TableView fx:id="singleplayerTable" layoutX="44.0" layoutY="92.0" prefHeight="200.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="currentPlace" prefWidth="91.0" style="-fx-text-fill: #08155b; -fx-text-allign: center;" text="Current Place" />
+          <TableColumn fx:id="name" prefWidth="246.4000244140625" style="-fx-text-fill: #08155b; -fx-text-allign: center;" text="Name" />
+            <TableColumn fx:id="highScore" prefWidth="98.39996337890625" style="-fx-text-fill: #08155b; -fx-text-allign: center;" text="High score" />
+            <TableColumn fx:id="date" prefWidth="185.5999755859375" style="-fx-text-fill: #08155b; -fx-text-allign: center;" text="Date" />
+         </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="44.0" layoutY="362.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="101.0" styleClass="standardButton" text="&lt;Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="refresh" contentDisplay="CENTER" layoutX="44.0" layoutY="309.0" mnemonicParsing="false" onAction="#refresh" prefHeight="32.0" prefWidth="101.0" styleClass="standardButton" text="Refresh">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <TextField fx:id="username" layoutX="323.0" layoutY="306.0" prefHeight="26.0" prefWidth="214.0" promptText="Username to be deleted" />
+      <TextField fx:id="score" layoutX="323.0" layoutY="337.0" prefHeight="26.0" prefWidth="214.0" promptText="Score in the entry to be deleted" />
+       <Button fx:id="play" layoutX="562.0" layoutY="362.0" mnemonicParsing="false" onAction="#play" prefHeight="32.0" prefWidth="101.0" styleClass="standardButton" text="Play again">
+           <font>
+               <Font size="14.0" />
+           </font>
+           <effect>
+               <DropShadow>
+                   <color>
+                       <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+                   </color>
+               </DropShadow>
+           </effect></Button>
+       <Button fx:id="deleteEntry" layoutX="562.0" layoutY="303.0" mnemonicParsing="false" onAction="#deleteEntryByNameAndScore" prefHeight="32.0" prefWidth="101.0" styleClass="standardButton" text="Delete entry">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Text fx:id="alertMessage" fill="#08155b" layoutX="323.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="214.39999999999986">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <stroke>
+            <RadialGradient centerX="0.5110803324099723" centerY="0.45724465558194777" radius="0.7312138728323699">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4366471767425537" green="0.6799220442771912" blue="0.8421052694320679" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7599999904632568" green="0.6023404002189636" blue="0.1899999976158142" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Text>
+      <Button layoutX="605.0" layoutY="33.0" mnemonicParsing="false" onAction="#showBarCharts" styleClass="standardButton" text="Bar charts" >
+          <font>
+              <Font size="14.0" />
+          </font>
+          <effect>
+              <DropShadow>
+                  <color>
+                      <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+                  </color>
+              </DropShadow>
+          </effect></Button>
+      <Pane fx:id="popupBarCharts" layoutY="-1.0" prefHeight="414.0" prefWidth="712.0" stylesheets="@/stylesheets/MainStylesheet.css">
+         <children>
+            <BarChart fx:id="barChart" prefHeight="414.0" prefWidth="712.0">
+              <xAxis>
+                <CategoryAxis opacity="0.0" tickMarkVisible="false" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="High score" side="LEFT" upperBound="1900.0" />
+              </yAxis>
+            </BarChart>
+            <Button fx:id="littleBack" layoutX="14.0" layoutY="375.0" mnemonicParsing="false" onAction="#back" styleClass="standardButton" text="Back">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

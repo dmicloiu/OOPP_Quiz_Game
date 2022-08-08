@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="712.0" stylesheets="/stylesheets/Questions.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.MCQuestionCtrl">
+    <children>
+        <ImageView fx:id="imageA" fitHeight="120.0" fitWidth="150.0" layoutX="53.0" layoutY="141.0" pickOnBounds="true" />
+        <ImageView fx:id="imageB" fitHeight="120.0" fitWidth="150.0" layoutX="280.0" layoutY="141.0" pickOnBounds="true" AnchorPane.bottomAnchor="153.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="141.0" />
+        <ImageView fx:id="imageC" fitHeight="120.0" fitWidth="150.0" layoutX="514.0" layoutY="141.0" pickOnBounds="true" />
+        <Button fx:id="emoji2" layoutX="289.0" layoutY="376.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/heart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+        <Button fx:id="emoji4" layoutX="400.0" layoutY="376.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/clown.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+        <Button fx:id="emoji3" layoutX="326.0" layoutY="376.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/skull.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+        <Button fx:id="emoji5" layoutX="363.0" layoutY="376.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/dead.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+        <Button fx:id="emoji1" layoutX="252.0" layoutY="376.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/thumbsUp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+        <Text fx:id="score" fill="#08155b" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score: 999" wrappingWidth="71.49139404296875">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+        <Text fx:id="questionNumber" fill="#08155b" layoutX="640.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12/20" textAlignment="CENTER" wrappingWidth="47.5">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+        <Text fx:id="question" fill="#08155b" layoutX="62.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert question here" textAlignment="CENTER" wrappingWidth="582.09765625">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="optionA" layoutX="53.0" layoutY="265.0" mnemonicParsing="false" onAction="#optionASelected" prefHeight="60.0" prefWidth="150.0" styleClass="answer" text="Option A" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="optionB" layoutX="279.0" layoutY="265.0" mnemonicParsing="false" onAction="#optionBSelected" prefHeight="60.0" prefWidth="150.0" styleClass="answer" text="Option B" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="optionC" layoutX="514.0" layoutY="265.0" mnemonicParsing="false" onAction="#optionCSelected" prefHeight="60.0" prefWidth="150.0" styleClass="answer" text="Option C" textAlignment="CENTER" wrapText="true" />
+        <Button layoutX="10.0" layoutY="374.0" mnemonicParsing="false" onAction="#showPopUp" prefHeight="32.0" prefWidth="62.0" styleClass="standardButton" text="&lt; Exit">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Text fx:id="ending" layoutX="132.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct answer!" textAlignment="CENTER" wrappingWidth="421.21630859375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+        <Pane fx:id="popupField" disable="true" layoutX="255.0" layoutY="143.0" opacity="0.0" prefHeight="128.0" prefWidth="200.0" style="-fx-background-color: #c7e7f1; -fx-border-color: #086af8#086af8;">
+            <children>
+                <Text fill="#08155b" layoutX="30.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you really want to exit?" />
+                <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#goBack" text="Yes" textFill="#08155b" />
+                <Button layoutX="153.0" layoutY="77.0" mnemonicParsing="false" onAction="#hidePopUp" text="No" textFill="#08155b" />
+            </children>
+         <effect>
+            <DropShadow height="28.0" radius="17.75" width="45.0">
+               <color>
+                  <Color red="0.01568627543747425" green="0.14509804546833038" blue="0.41960784792900085" />
+               </color>
+            </DropShadow>
+         </effect>
+        </Pane>
+      <Text fx:id="latestEmoji" fill="#08155b" layoutX="81.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="156.0" AnchorPane.bottomAnchor="5.3544921875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="pointsJoker" layoutX="571.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#doublePoints" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/doublePoints.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="timeJoker" layoutX="608.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#decreaseTime" prefHeight="29.0" prefWidth="27.0" styleClass="feature">
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/time.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="wrongAnsJoker" layoutX="645.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#showWrongAnswer" prefHeight="29.0" prefWidth="37.0" styleClass="feature">
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/imgs/wrongAnswer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="9.21" radius="3.3675" width="6.26">
+               <color>
+                  <Color red="0.8392156958580017" green="0.4745098054409027" blue="0.07450980693101883" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Pane fx:id="timeBar" layoutX="193.0" layoutY="24.0" prefHeight="19.0" prefWidth="300.0" styleClass="timeBar" />
+      <Text fx:id="latestJoker" fill="#08155b" layoutX="81.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="156.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
